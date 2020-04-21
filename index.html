@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <link href="https://fonts.googleapis.com/css?family=Muli&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+        <title>formulaire</title>
+    </head>
+    <body>
+        <header>
+            <h1 class="logo">logo</h1>
+            <nav>
+            <ul class="link_nav">
+                <li><a href="#">acceuil</a></li>
+                <li><a href="#">inscription</a></li>
+                <li><a href="#">connexion</a></li>
+            </ul>
+            </nav>
+            <button class="btn">about</button>
+
+        </header>
+
+        <div class="conteneur">
+        <h1 id="titre">formulaire</h1>
+        <p id="description">merci de remplire le formulaire</p>
+    
+        <form id="survey-from">
+        <div class="from-group">
+            <label id="label-name" for="name">nom</label>
+            <input type="text" name="name" id="name" class="from_control" placeholder="entrez votre nom">
+        </div>
+        <div class="from-group">
+            <label id="label-email" for="email">email</label> 
+            <input type="email" name="email" id="email" class="from_control" placeholder="entrez votre email">
+        </div>
+        <div class="from-group">
+            <label id="label-number" for="number">age</label>
+            <input type="number" name="age" min="10"max="99" id="age" class="from_control" placeholder="entrez votre age">
+        </div>
+        <div class="from-group">
+            <p>quel option décrit votre role</p>
+            <select id="dropdown" name="role" class="from_control" required>
+                <option disabled selected value>selectionnez</option>
+                <option value="etudiant">etudiant</option>
+                <option value="demandeur d'emploi">demandeur d'emploi</option>
+                <option value="cdi">cdi</option>
+                <option value="cdd">cdd</option>
+                <option value="autre">autre</option>
+            </select>
+            <div class="from-group">
+                <p>recommandez freecodecamp a vous amis ?</p>
+                <label class="radio">
+                <input name="user-recomanded" value="oui" type="radio" class="input-radio" checked>
+                  oui   
+                </label>
+                <label class="radio">
+                    <input name="user-recomanded" value="non" type="radio" class="input-radio">
+                    non
+                </label>
+                <label class="radio">
+                    <input name="user-recomanded" value="peut etre" type="radio" class="input-radio">
+                    peut etre
+                </label>
+            </div>
+            <div class="from-group">
+                <p>qu'aimeriez-vous voir amélioré
+                    <span class="clue">(cochez toutes les cases)</span>
+                    </p>
+                    <label>
+                    <input name="prefer" value="html" type="checkbox" class="input-checkbox">
+                    html
+                    </label>
+                    <label>
+                    <input name="prefer" value="css" type="checkbox" class="input-checkbox"> 
+                    css
+                    </label>
+                    <label>
+                    <input name="prefer" value="javasript" type="checkbox" class="input-checkbox">js
+                    </label>
+            </div>
+            <div class="from-group">
+                <p>commentaires</p>
+                <textarea id="coments" class="input-textarea" name="coments" placeholder="entrez votre commentaire"></textarea>
+            </div>
+            <div class="from-group">
+                <button type="soumettre" id="soumettre" class="btn">soumettre</button>
+            </div>
+        </div>
+        </form>
+        </div>
+        <footer>
+            <a href="#">home</a>
+        </footer>
+    </body>
+</html>
